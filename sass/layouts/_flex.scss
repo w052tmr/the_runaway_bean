@@ -1,0 +1,33 @@
+.flex-row-between {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2.5rem;
+}
+
+@media only screen and (max-width: 65em) {
+    .flex-row-between {
+        flex-direction: column-reverse;
+    }
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 65em) {
+    .flex-row-center {
+        flex-direction: column;
+    }
+}
+
+// .flex-row-end{
+//     display: flex;
+//     justify-content: flex-end;
+//     width: 100%;
+// }

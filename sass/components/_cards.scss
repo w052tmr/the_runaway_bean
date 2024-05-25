@@ -1,0 +1,263 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    min-height: 100%;
+    padding: 10rem 4rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: $brown-lighter;
+    background-image: linear-gradient(
+        100deg,
+        rgba($yellow-white, 0.3),
+        rgba($yellow-white, 0.1) 25%,
+        rgba($brown-light, 0.3) 40%,
+        rgba($brown-dark, 0.3)
+    );
+    outline: 1px solid $yellow-lighter;
+    outline-offset: -2rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: 65em) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkbox {
+        display: none;
+    }
+
+    // chechbox not checked
+    .card {
+        display: flex;
+        cursor: pointer;
+        height: 40rem;
+        padding: 2rem;
+        margin: 0 1rem;
+        border-radius: 5px;
+        border: 1px solid rgba($brown-dark, 0.9);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        transition: all 0.3s;
+
+        & > .card__header {
+            position: absolute;
+            top: 90%;
+            transform: translate(-50%, -50%);
+            color: $yellow-light;
+            transition: all 0.2s;
+        }
+
+        &--1 {
+            width: 60%;
+            background-image: linear-gradient(
+                    180deg,
+                    rgba($brown-lighter, 0.2),
+                    rgba($brown-light, 0.2) 50%,
+                    rgba($brown-light, 0.3) 68%,
+                    rgba($brown-medium, 0.95) 90%
+                ),
+                url(../imgs/CoffeeShop-1200w.jpg);
+
+            &:hover > .card__text {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            & > .card__header {
+                left: 5%;
+            }
+
+            @media only screen and (max-width: 65em) {
+                width: 100%;
+                margin-bottom: 6rem;
+                cursor: default;
+            }
+        }
+
+        &--2,
+        &--3,
+        &--4 {
+            width: 10rem;
+            background-color: $brown-dark;
+            background-image: linear-gradient(
+                95deg,
+                $brown-dark,
+                $brown-medium
+            );
+
+            & > .card__header {
+                left: 50%;
+            }
+
+            @media only screen and (max-width: 65em) {
+                width: 100%;
+                margin-bottom: 6rem;
+
+                & > .card__header {
+                    left: 5%;
+                }
+            }
+        }
+
+        @media only screen and (max-width: 65em) {
+            &--2 {
+                background-image: linear-gradient(
+                        180deg,
+                        rgba($brown-lighter, 0.2),
+                        rgba($brown-light, 0.2) 50%,
+                        rgba($brown-light, 0.3) 68%,
+                        rgba($brown-medium, 0.95) 90%
+                    ),
+                    url(../imgs/coffee-shop2-1200w.jpg);
+
+                cursor: default;
+            }
+
+            &--3 {
+                background-image: linear-gradient(
+                        180deg,
+                        rgba($brown-lighter, 0.2),
+                        rgba($brown-light, 0.2) 50%,
+                        rgba($brown-light, 0.3) 68%,
+                        rgba($brown-medium, 0.95) 90%
+                    ),
+                    url(../imgs/coffee-shop-outdoors-1200w.jpg);
+
+                cursor: default;
+            }
+
+            &--4 {
+                background-image: linear-gradient(
+                        180deg,
+                        rgba($brown-lighter, 0.2),
+                        rgba($brown-light, 0.2) 50%,
+                        rgba($brown-light, 0.3) 68%,
+                        rgba($brown-medium, 0.95) 90%
+                    ),
+                    url(../imgs/PourOver-1200w.jpg);
+
+                cursor: default;
+            }
+        }
+
+        & > .card__text {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin: 0 2% 2% 10%;
+            padding: 1rem 1.5rem;
+            background-color: rgba($brown-dark, 0.8);
+            color: rgba($yellow-white, 0.95);
+            border-radius: 3px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0s, opacity 0.4s;
+
+            @media only screen and (max-width: 65em) {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    //checkbox is checked
+    .checkbox:checked + .card {
+        background-color: $brown-dark;
+        background-image: linear-gradient(95deg, $brown-dark, $brown-medium);
+
+        @media only screen and (max-width: 65em) {
+            background-image: linear-gradient(
+                    180deg,
+                    rgba($brown-lighter, 0.2),
+                    rgba($brown-light, 0.2) 50%,
+                    rgba($brown-light, 0.3) 68%,
+                    rgba($brown-medium, 0.95) 90%
+                ),
+                url(../imgs/CoffeeShop-1200w.jpg);
+            cursor: default;
+        }
+
+        &--1 {
+            width: 10rem;
+
+            & > .card__header {
+                left: 50%;
+            }
+
+            & > .card__text {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            @media only screen and (max-width: 65em) {
+                width: 100%;
+                margin-bottom: 6rem;
+
+                & > .card__header {
+                    left: 5%;
+                }
+
+                & > .card__text {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &--2,
+        &--3,
+        &--4 {
+            width: 60%;
+
+            @media only screen and (max-width: 65em) {
+                width: 100%;
+                margin-bottom: 6rem;
+            }
+
+            &:hover .card__text {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            & > .card__header {
+                left: 5%;
+            }
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                    180deg,
+                    rgba($brown-lighter, 0.2),
+                    rgba($brown-light, 0.2) 50%,
+                    rgba($brown-light, 0.3) 68%,
+                    rgba($brown-medium, 0.95) 90%
+                ),
+                url(../imgs/coffee-shop2-1200w.jpg);
+        }
+
+        &--3 {
+            background-image: linear-gradient(
+                    180deg,
+                    rgba($brown-lighter, 0.2),
+                    rgba($brown-light, 0.2) 50%,
+                    rgba($brown-light, 0.3) 68%,
+                    rgba($brown-medium, 0.95) 90%
+                ),
+                url(../imgs/coffee-shop-outdoors-1200w.jpg);
+        }
+
+        &--4 {
+            background-image: linear-gradient(
+                    180deg,
+                    rgba($brown-lighter, 0.2),
+                    rgba($brown-light, 0.2) 50%,
+                    rgba($brown-light, 0.3) 68%,
+                    rgba($brown-medium, 0.95) 90%
+                ),
+                url(../imgs/PourOver-1200w.jpg);
+        }
+    }
+}

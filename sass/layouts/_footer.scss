@@ -1,0 +1,117 @@
+.footer {
+    padding: 6rem 4rem 15rem;
+    background-color: $brown-dark;
+    position: relative;
+
+    @media only screen and (max-width: 37.5em) {
+        padding-bottom: 30rem;
+    }
+
+    &__logo {
+        margin-top: 6rem;
+        margin-bottom: 14rem;
+        font-size: 4rem;
+    }
+
+    .social-box {
+        display: inline-block;
+        position: absolute;
+        top: 42.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media only screen and (max-width: 37.5em) {
+            width: 100%;
+            top: 35%;
+            text-align: center;
+        }
+    }
+
+    .social__list {
+        display: block;
+        list-style: none;
+    }
+
+    .social__item {
+        display: inline-block;
+    }
+
+    .social__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 4.5rem;
+            color: $brown-white;
+            text-decoration: none;
+            margin: 0 1.5rem;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+            color: $yellow-light;
+        }
+    }
+
+    &__list {
+        display: inline-block;
+        font-size: 1.6rem;
+        list-style: none;
+        margin: 12rem 0 0 2.5rem;
+        width: 45%;
+        padding-top: 3rem;
+        border-top: 1px solid $brown-white;
+    }
+
+    &__item {
+        display: inline;
+        margin: 5rem 2.5rem 0 0;
+        width: 50%;
+        line-height: 4rem;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: $brown-white;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            transform: scale(1.1) rotateZ(-4deg);
+            box-shadow: 0 0.4rem 1rem rgba($brown-black, 0.6);
+        }
+    }
+
+    &__statement-box {
+        width: 40%;
+        float: right;
+        margin: 12rem 4.5rem 0 0;
+    }
+
+    &__statement {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        padding-top: 3rem;
+        letter-spacing: 1px;
+        border-top: 1px solid $brown-white;
+
+        a {
+            &:link,
+            &:visited {
+                display: inline-block;
+                text-decoration: none;
+                color: $yellow-light;
+                transition: all 0.3s;
+            }
+
+            &:hover {
+                transform: scale(1.1) rotateZ(-4deg);
+                box-shadow: 0 0.4rem 1rem rgba($brown-black, 0.6);
+            }
+        }
+    }
+}

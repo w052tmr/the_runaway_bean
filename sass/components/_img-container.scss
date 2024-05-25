@@ -1,0 +1,70 @@
+.img-container {
+    width: 48%;
+    padding: 5rem;
+    box-shadow: 0 2px 8px rgba($yellow-light, 1);
+
+    @media only screen and (max-width: 65em) {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        width: 95%;
+    }
+
+    &__background {
+        padding: 5rem;
+        border-radius: 3px;
+        background-size: 100%;
+        background-color: rgba($yellow-lighter, 0.8);
+        border: 2px solid rgba($brown-white, 1);
+        outline: 3px solid rgba($brown-dark, 0);
+        outline-offset: -7rem;
+        box-shadow: 0 8px 4rem rgba($brown-black, 0.35);
+        transition: all 1s, outline 0.2s, outline-offset 0.4s, border-color 0.4s;
+
+        &--1 {
+            background-image: linear-gradient(
+                165deg,
+                transparent 0,
+                transparent 50%,
+                rgba($brown-medium, 1) 50%,
+                rgba($brown-dark, 1) 85%,
+                rgba($brown-black, 1)
+            );
+        }
+
+        &--2 {
+            background-image: linear-gradient(
+                195deg,
+                transparent 0,
+                transparent 50%,
+                rgba($brown-medium, 1) 50%,
+                rgba($brown-dark, 1) 85%,
+                rgba($brown-black, 1)
+            );
+        }
+    }
+
+    &__img {
+        display: block;
+        margin: auto;
+        width: 100%;
+        max-width: 100rem;
+        border-radius: 5px;
+    }
+
+    &:hover &__background {
+        &--1,
+        &--2 {
+            background-size: 510%;
+            outline-color: rgba($yellow-lighter, 1);
+            outline-offset: -0.42rem;
+            border-color: rgba($brown-light, 0.8);
+        }
+
+        &--1 {
+            background-position: 100%;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.pop-up{
+    //generic reusable pop-up code
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($brown-light, .15);
+    backdrop-filter: blur(3px);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+
+    
+    &__content{
+        //generic reusable pop-up content code
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(.9);
+        padding: 2rem;
+        z-index: 30;
+        width: 85%;
+        border-radius: 5px;
+        box-shadow: 0 1rem 4rem rgba($brown-black, .75);
+        transition: all .4s;
+
+        //envelope-specific pop-up code
+        &--envelope{
+            background-image: linear-gradient(82deg, rgba($yellow-lighter, 1) 0, rgba($yellow-lighter, 1) 55%, rgba($brown-dark, .3) 55%), url(../imgs/coffee-beans-hand-1200w.jpg);
+            background-position: center;
+            background-size: cover;
+
+            @media (tab-land){
+                background-image: linear-gradient(82deg, rgba($yellow-lighter, 1) 0, rgba($yellow-lighter, 1) 65%, rgba($brown-dark, .3) 65%), url(../imgs/coffee-beans-hand-1200w.jpg);
+            }
+            
+            @media (max-width: 62.5em){
+                background-image: linear-gradient(82deg, rgba($yellow-lighter, 1) 0, rgba($yellow-lighter, 1) 65%, rgba($brown-dark, .3) 65%), url(../imgs/coffee-beans-hand-1200w.jpg);
+            }
+
+            @media (max-width: 43.75em){
+                background-image: linear-gradient(82deg, rgba($yellow-lighter, .95) 0, rgba($yellow-lighter, .95) 100%), url(../imgs/coffee-beans-hand-1200w.jpg);
+                
+            }
+        }
+    }
+
+    //close X button
+    &__exit{
+        &:link,
+        &:visited{
+            display: inline-block;
+            font-size: 4rem;
+            text-decoration: none;
+            line-height: normal;
+            position: absolute;
+            top: 2rem;
+            left: 2.5rem;
+            color: $brown-medium;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active{
+            color: $brown-dark;
+            transform: translateY(-2px) scale(1.05);
+            text-shadow: 0 2px 2px rgba($brown-black, .25);
+        }
+    }
+
+    //functionality
+    &:target{
+        visibility: visible;
+        opacity: 1;
+    }
+    &:target &__content{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

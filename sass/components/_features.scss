@@ -1,0 +1,37 @@
+.features {
+    width: 48%;
+    padding: 3rem 4rem;
+    background-color: rgba($brown-dark, 0.97);
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 2rem rgba($brown-black, 0.4);
+    transform: skewX(-6deg);
+    transition: all 0.4s;
+
+    @media only screen and (max-width: 65em) {
+        width: 80%;
+        margin-bottom: 4rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        width: 100%;
+        transform: none;
+    }
+
+    & > * {
+        transform: skewX(6deg);
+
+        @media only screen and (max-width: 37.5em) {
+            transform: none;
+        }
+    }
+
+    &:hover {
+        transform: translateY(-8px) skewX(-6deg);
+        box-shadow: 0 8px 2rem rgba($brown-black, 0.4);
+
+        @media only screen and (max-width: 37.5em) {
+            transform: translateY(-8px) skewX(0deg);
+        }
+    }
+}

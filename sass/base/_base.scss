@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+
+    @include respond(tab-land){
+        font-size: 50%;
+    }
+
+    @include respond(tab-port){
+        font-size: 42%;
+    }
+
+    @include respond(phone){
+        font-size: 37.5%;
+    }
+}
+
+body{
+    box-sizing: inherit;
+    position: relative;
+}
+
+::selection {
+    color: $brown-white;
+    background-color: $brown-dark;
+}
