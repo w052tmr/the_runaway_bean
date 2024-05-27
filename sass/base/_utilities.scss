@@ -53,8 +53,12 @@
 .u-margin-bottom-huge {
     margin-bottom: 12rem !important;
 
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 65em) {
         margin-bottom: 8rem !important;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        margin-bottom: 6rem !important;
     }
 }
 

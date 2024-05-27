@@ -2,10 +2,6 @@
     padding: 15rem 2.5rem 20rem;
     margin-bottom: 10rem;
 
-    @media only screen and (hover: none) {
-        padding: 5rem 2.5rem 7.5rem;
-    }
-
     @media only screen and (max-width: 43.75em) {
         padding: 5rem 2.5rem;
         margin-bottom: 16rem;
@@ -14,18 +10,26 @@
     @media only screen and (max-width: 37.5em) {
         padding: 0 2.5rem;
         margin-top: 6rem;
-        margin-bottom: 36rem;
+        margin-bottom: 28rem;
+    }
+
+    @media only screen and (max-width: 32em) {
+        margin-bottom: 34rem;
     }
 
     @media only screen and (max-width: 30em) {
-        margin-bottom: 46rem;
+        margin-bottom: 42rem;
     }
 
     @media only screen and (max-width: 25em) {
         margin-bottom: 50rem;
     }
 
-    @media only screen and (max-width: 22.5em) {
+    @media only screen and (max-width: 23.75em) {
+        margin-bottom: 56rem;
+    }
+
+    @media only screen and (max-width: 21.25em) {
         margin-bottom: 63rem;
     }
 
@@ -49,6 +53,10 @@
         (transparent) 66.6667%,
         rgba($brown-medium, 1) 66.6667%
     );
+
+    @media only screen and (max-width: 65em) {
+        padding: 6rem 2rem;
+    }
 
     @media only screen and (max-width: 37.5em) {
         padding: 10rem 2rem 12rem;

@@ -66,15 +66,18 @@
         display: inline-block;
         font-size: 1.6rem;
         list-style: none;
-        margin: 12rem 0 0 2.5rem;
-        width: 45%;
         padding-top: 3rem;
+        margin: 8rem 0 0 2.5rem;
         border-top: 1px solid $brown-white;
+    }
+
+    &__item:not(:first-child) {
+        margin: 2.5rem 2.5rem 2.5rem;
     }
 
     &__item {
         display: block;
-        margin: 2.5rem;
+        margin: 0rem 2.5rem 2.5rem;
         line-height: 4rem;
     }
 
@@ -97,7 +100,7 @@
     &__statement-box {
         width: 40%;
         float: right;
-        margin: 12rem 4.5rem 0 0;
+        margin: 8rem 4.5rem 0 0;
     }
 
     &__statement {
