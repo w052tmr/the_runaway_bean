@@ -4,12 +4,21 @@
     box-shadow: 0 2px 8px rgba($yellow-light, 1);
 
     @media only screen and (max-width: 65em) {
-        width: 80%;
-        margin-bottom: 4rem;
+        width: 60%;
+        margin-bottom: 2.5rem;
+    }
+
+    @media only screen and (max-width: 46em) {
+        width: 75%;
+        padding: 0rem;
     }
 
     @media only screen and (max-width: 37.5em) {
-        width: 95%;
+        width: 90%;
+    }
+
+    @media only screen and (max-width: 32em) {
+        width: 100%;
     }
 
     &__background {
@@ -22,6 +31,14 @@
         outline-offset: -7rem;
         box-shadow: 0 8px 4rem rgba($brown-black, 0.35);
         transition: all 1s, outline 0.2s, outline-offset 0.4s, border-color 0.4s;
+
+        @media only screen and (max-width: 37.5em) {
+            padding: 3rem;
+        }
+
+        @media only screen and (max-width: 32em) {
+            padding: 1.5rem;
+        }
 
         &--1 {
             background-image: linear-gradient(

@@ -1,67 +1,66 @@
-.btn{
+.btn {
     display: inline-block;
     text-decoration: none;
     position: relative;
     z-index: 20;
 
-    &__big{
+    &__big {
         &,
-        &:link, 
-        &:visited{
-            font-size: 2.25rem;
+        &:link,
+        &:visited {
+            font-size: 1.6rem;
             font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 2px;
             padding: 1rem 4rem;
             border-radius: 10rem;
-            transition: all .3s;
+            transition: all 0.3s;
         }
-        
-        &:hover{
-            box-shadow: 0 1rem 2rem rgba(#000, .25);
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba(#000, 0.25);
             transform: translateY(-5px);
         }
-        
-        &:active{
-            box-shadow: 0 5px 1rem rgba(#000, .4);
+
+        &:active {
+            box-shadow: 0 5px 1rem rgba(#000, 0.4);
             transform: translateY(-2.5px);
         }
     }
-    
-    &--white{
+
+    &--white {
         background-color: $yellow-white;
         color: $brown-black;
-        
-        &:hover{
+
+        &:hover {
             background-color: $brown-dark;
             color: $brown-white;
         }
     }
-    
-    &__small{
+
+    &__small {
         &,
         &:link,
-        &:visited{
+        &:visited {
             font-size: 1.8rem;
             font-weight: 400;
             letter-spacing: 2px;
-            padding: .25rem 1rem;
-            transition: all .2s;
+            padding: 0.25rem 1rem;
+            transition: all 0.2s;
         }
-        
-        &:hover{
+
+        &:hover {
             transform: translateY(-5px);
         }
     }
-    
-    &--yellow-white{
-        background-color: rgba($yellow-white, .9);
+
+    &--yellow-white {
+        background-color: rgba($yellow-white, 0.9);
         color: $brown-dark;
-        
-        &:hover{
+
+        &:hover {
             background-color: $yellow-light;
             color: $brown-black;
         }
     }
-    
 }

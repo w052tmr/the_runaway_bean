@@ -1,67 +1,87 @@
-.u-center-text{text-align: center !important;}
+.u-center-text {
+    text-align: center !important;
+}
 
-.u-margin-auto{
+.u-margin-auto {
     margin: auto;
 }
 
-.u-margin-top-massive{
+.u-margin-top-massive {
     margin-top: 26rem !important;
 }
 
-.u-margin-top-less-masive{
+.u-margin-top-less-masive {
     margin-top: 20rem !important;
 }
 
-.u-margin-top-huge{
+.u-margin-top-huge {
     margin-top: 16rem !important;
+
+    @media only screen and (max-width: 62.5em) {
+        margin-top: 10rem !important;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+        margin-top: 8rem !important;
+    }
 }
 
-.u-margin-top-big{
+.u-margin-top-big {
     margin-top: 10rem !important;
 }
 
-.u-margin-top-medium{margin-top: 6rem !important;}
+.u-margin-top-medium {
+    margin-top: 6rem !important;
+}
 
-.u-margin-top-small{margin-top: 4rem !important;}
+.u-margin-top-small {
+    margin-top: 4rem !important;
+}
 
-.u-margin-top-tiny{margin-top: 2rem !important;}
+.u-margin-top-tiny {
+    margin-top: 2rem !important;
+}
 
-.u-margin-bottom-massive{
+.u-margin-bottom-massive {
     margin-bottom: 26rem !important;
 }
 
-.u-margin-bottom-less-massive{
+.u-margin-bottom-less-massive {
     margin-bottom: 18rem !important;
 }
 
-.u-margin-bottom-huge{
-    margin-bottom: 14rem !important;
+.u-margin-bottom-huge {
+    margin-bottom: 12rem !important;
+
+    @media only screen and (max-width: 37.5em) {
+        margin-bottom: 8rem !important;
+    }
 }
 
-.u-margin-bottom-big{
+.u-margin-bottom-big {
     margin-bottom: 10rem !important;
 }
 
-.u-margin-bottom-medium{
+.u-margin-bottom-medium {
     margin-bottom: 6rem !important;
 }
 
-.u-margin-bottom-small{
+.u-margin-bottom-small {
     margin-bottom: 4rem !important;
 }
 
-.u-margin-bottom-tiny{
+.u-margin-bottom-tiny {
     margin-bottom: 2rem !important;
 }
 
-.u-margin-left-small{
+.u-margin-left-small {
     margin-left: 4rem !important;
 }
 
-.u-margin-left-tiny{
+.u-margin-left-tiny {
     margin-left: 2rem !important;
 }
 
-.u-uppercase{
+.u-uppercase {
     text-transform: uppercase !important;
 }

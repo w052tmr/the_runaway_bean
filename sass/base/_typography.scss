@@ -1,6 +1,6 @@
-body{
+body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-weight: 400;
     line-height: 2;
     min-height: 100vh;
@@ -8,7 +8,7 @@ body{
     background-color: $brown-white;
 }
 
-.heading-primary{
+.heading-primary {
     display: block;
     font-family: 'Recoleta', Helvetica, Arial, sans-serif;
     color: $yellow-medium;
@@ -18,86 +18,99 @@ body{
     transform: skewY(-1.5deg) skewX(-12deg);
     margin: auto;
     text-align: center;
-    transition: all .3s;
+    transition: all 0.3s;
 
-    &:hover{
-        transform: skewY(-.5deg) skewX(-4deg);
+    &:hover {
+        transform: skewY(-0.5deg) skewX(-4deg);
     }
 
-    @include respond(tab-land){
-        letter-spacing: .75rem;
+    @include respond(tab-land) {
+        letter-spacing: 0.75rem;
     }
 
-    @include respond(tab-port){
-        letter-spacing: .5rem;
+    @include respond(tab-port) {
+        letter-spacing: 0.5rem;
+        transform: skewY(0deg) skewX(0deg);
     }
-    
-    @media (max-width: 44.375em){
+
+    @media only screen and (max-width: 44.375em) {
         letter-spacing: 0;
         font-size: 5.75rem;
     }
 
-    @media (max-width: 28.125em){
+    @media only screen and (max-width: 37.5em) {
+        &:hover {
+            transform: skewY(0deg) skewX(0deg);
+        }
+    }
+
+    @media only screen and (max-width: 28.125em) {
         font-size: 5.25rem;
     }
-    
-    &--sub{
+
+    &--sub {
         display: block;
-        font-size: 2.25rem;
+        font-size: 1.8rem;
         color: $yellow-dark;
         font-weight: 900;
         letter-spacing: 1.5rem;
-        transform:skewX(-12deg);
-        
-        @include respond(tab-land){
+        transform: skewX(-12deg);
+
+        @include respond(tab-land) {
             letter-spacing: 1.35rem;
         }
-        
-        @include respond(tab-port){
+
+        @include respond(tab-port) {
             letter-spacing: 1.25rem;
+            margin-top: 2.5rem;
         }
-        
-        @media (max-width: 44.375em){
-            letter-spacing: .75rem;
+
+        @media (max-width: 44.375em) {
+            letter-spacing: 0.75rem;
         }
-        
-        @include respond(phone){
+
+        @include respond(phone) {
             transform: skewX(-3deg) skewY(0);
             letter-spacing: 4px;
         }
 
-        @media (max-width: 28.125em){
+        @media (max-width: 28.125em) {
             letter-spacing: 2px;
             font-size: 1.9rem;
         }
     }
 }
 
-.envelope-text{
+.envelope-text {
     font-family: cursive, monospace !important;
 }
 
-.heading-secondary{
+.heading-secondary {
     font-family: 'Recoleta', Helvetica, Arial, sans-serif;
     display: block;
     width: 45%;
     color: $yellow-white;
     text-transform: uppercase;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     margin: 0 auto;
-    letter-spacing: .4rem;
-    text-shadow: 0 1px 1rem rgba($brown-black, .2);
+    letter-spacing: 0.4rem;
+    text-shadow: 0 1px 1rem rgba($brown-black, 0.2);
     border-bottom: 2px solid $brown-dark;
-    text-shadow: 0 2px 4px rgba($brown-black, .7);
+    text-shadow: 0 2px 4px rgba($brown-black, 0.7);
     position: relative;
-    transition: all .3s;
-    
-    &:hover{
+    transition: all 0.3s;
+
+    &:hover {
         transform: skewY(-2deg) skewX(-7deg) scale(1.25);
-        text-shadow: 0 5px 1rem rgba($brown-black, .4);
+        text-shadow: 0 5px 1rem rgba($brown-black, 0.4);
     }
-    
-    &--envelope{
+
+    @media only screen and (max-width: 37.5em) {
+        width: 80%;
+    }
+
+    &--envelope {
+        font-size: 1.8rem;
         color: $brown-medium;
         font-weight: 100;
         width: 40%;
@@ -105,115 +118,149 @@ body{
         z-index: -2;
         text-shadow: none;
 
-        &:hover{
+        &:hover {
             transform: none;
             text-shadow: none;
         }
-        
-        @media (max-width: 87.5em), (hover: hover){
+
+        @media (max-width: 87.5em), (hover: hover) {
             margin-left: 6rem;
         }
 
-        @media (max-width: 62.5em){
-            margin-left: 9.5rem
+        @media (max-width: 62.5em) {
+            font-size: 2.25rem;
+            margin-left: 9.5rem;
         }
 
-        @media (max-width: 43.75em){
+        @media (max-width: 45em) {
             width: 75%;
             margin: 0 auto;
         }
     }
 }
 
-.paragraph{
+.paragraph {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: $yellow-white;
-    text-align: left;    
-    
-    
-    &--envelope{
+    text-align: left;
+
+    @media only screen and (max-width: 37.5em) {
+        font-size: 2.25rem;
+    }
+
+    &--envelope {
         color: $brown-medium;
         padding: 2rem 3rem;
 
-        @media (max-width: 87.5em), (hover: hover){
+        @media (max-width: 87.5em), (hover: hover) {
             width: 56%;
         }
 
-        @media (max-width: 62.5em){
+        @media (max-width: 62.5em) {
+            font-size: 2rem;
+            margin-top: 1.6rem;
             width: 70%;
         }
 
-        @media (max-width: 43.75em){
+        @media (max-width: 45em) {
             width: auto;
         }
 
-        .greeting{
-            display: block;
-            font-size: 1.7rem;
-            color: $brown-dark;
-            text-transform: capitalize;
-            margin-bottom: 1rem;
+        @media (max-width: 37.5em) {
+            font-size: 2.25rem;
         }
 
-        .intro{
-            display: block;
-            width: 98%;
-            text-indent: 2.5rem;
-            margin-bottom: .5rem;
-        }
-
-        .ending, .signature{
+        .greeting {
             display: block;
             font-size: 1.8rem;
             color: $brown-dark;
-            text-align: right;
-            margin-right: 7.5rem;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+
+            @media (max-width: 62.5em) {
+                font-size: 2rem;
+            }
+
+            @media (max-width: 37.5em) {
+                font-size: 2.25rem;
+            }
         }
 
-        .signature{
+        .intro {
+            display: block;
+            width: 98%;
+            text-indent: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .ending,
+        .signature {
+            display: block;
+            font-size: 1.6rem;
+            color: $brown-dark;
+            text-align: right;
+            margin-right: 7.5rem;
+
+            @media (max-width: 62.5em) {
+                font-size: 2rem;
+            }
+
+            @media (max-width: 37.5em) {
+                font-size: 2.25rem;
+            }
+        }
+
+        .signature {
             font-family: 'Recoleta', Helvetica, Arial, sans-serif;
             font-weight: 600;
             margin-right: 3.25rem;
             letter-spacing: 1px;
             transform: skewX(-8deg) skewY(-1.5deg) translateY(6px);
-            transition: all .1s;
-            &:hover{
-                transform: skewX(-12deg) skewY(-3deg) translateY(12px) scale(1.1);
+            transition: all 0.1s;
+            &:hover {
+                transform: skewX(-12deg) skewY(-3deg) translateY(12px)
+                    scale(1.1);
                 letter-spacing: 2px;
             }
         }
     }
 }
 
-.heading-tertiary{
+.heading-tertiary {
     display: block;
     font-size: inherit;
     color: $yellow-medium;
     text-transform: uppercase;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
     text-align: left;
-    background-image: linear-gradient(to right, $yellow-dark 0, $yellow-dark 20%, $yellow-medium 25%, $yellow-medium);
+    background-image: linear-gradient(
+        to right,
+        $yellow-dark 0,
+        $yellow-dark 20%,
+        $yellow-medium 25%,
+        $yellow-medium
+    );
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 .25rem .75rem rgba($brown-black, .2);
-    transition: all .2s;
+    text-shadow: 0 0.25rem 0.75rem rgba($brown-black, 0.2);
+    transition: all 0.2s;
 
-    &--brown{
+    &--brown {
         background-image: linear-gradient(to right, $brown-medium, $brown-dark);
         background-clip: text;
         color: transparent;
     }
 
-    &:hover{
-        text-shadow: 0 .35rem .75rem rgba($brown-black, .3);
-        transform: scale(1.01) rotateZ(-.25deg);
-        letter-spacing: .35rem;
+    &:hover {
+        text-shadow: 0 0.35rem 0.75rem rgba($brown-black, 0.3);
+        transform: scale(1.01) rotateZ(-0.25deg);
+        letter-spacing: 0.35rem;
     }
 }
 
-.heading-quaternary{
+.heading-quaternary {
     display: block;
     color: $yellow-white;
     font-size: 3.5rem;

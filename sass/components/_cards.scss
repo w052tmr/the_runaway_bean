@@ -23,6 +23,11 @@
         align-items: center;
     }
 
+    @media only screen and (max-width: 37.5em) {
+        padding: 10rem 0rem;
+        outline: none;
+    }
+
     .checkbox {
         display: none;
     }
@@ -40,6 +45,11 @@
         background-size: cover;
         position: relative;
         transition: all 0.3s;
+
+        @media only screen and (max-width: 37.5em) {
+            margin: 0rem;
+            padding: 0rem;
+        }
 
         & > .card__header {
             position: absolute;
@@ -74,6 +84,12 @@
                 margin-bottom: 6rem;
                 cursor: default;
             }
+
+            @media only screen and (max-width: 30em) {
+                & > .card__header {
+                    display: none;
+                }
+            }
         }
 
         &--2,
@@ -97,6 +113,12 @@
 
                 & > .card__header {
                     left: 5%;
+                }
+            }
+
+            @media only screen and (max-width: 30em) {
+                & > .card__header {
+                    display: none;
                 }
             }
         }
@@ -159,6 +181,10 @@
             @media only screen and (max-width: 65em) {
                 visibility: visible;
                 opacity: 1;
+            }
+
+            @media only screen and (max-width: 30em) {
+                margin: 0rem;
             }
         }
     }
