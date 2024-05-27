@@ -274,9 +274,12 @@ body {
 
 .u-margin-bottom-huge {
   margin-bottom: 12rem !important; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 65em) {
     .u-margin-bottom-huge {
       margin-bottom: 8rem !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-bottom-huge {
+      margin-bottom: 6rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 10rem !important; }
@@ -759,23 +762,30 @@ body {
   box-shadow: 0 4px 2rem rgba(20, 12, 11, 0.4);
   transform: skewX(-6deg);
   transition: all 0.4s; }
+  @media only screen and (max-width: 75em) {
+    .features {
+      transform: skewX(0deg); } }
   @media only screen and (max-width: 65em) {
     .features {
-      width: 80%;
-      margin-bottom: 4rem; } }
+      width: 70%;
+      margin-bottom: 4rem;
+      transform: skewX(0deg); } }
+  @media only screen and (max-width: 45em) {
+    .features {
+      width: 80%; } }
   @media only screen and (max-width: 37.5em) {
     .features {
       width: 100%;
       transform: none; } }
   .features > * {
     transform: skewX(6deg); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .features > * {
         transform: none; } }
   .features:hover {
     transform: translateY(-8px) skewX(-6deg);
     box-shadow: 0 8px 2rem rgba(20, 12, 11, 0.4); }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .features:hover {
         transform: translateY(-8px) skewX(0deg); } }
 
@@ -786,10 +796,11 @@ body {
   @media only screen and (max-width: 65em) {
     .img-container {
       width: 60%;
-      margin-bottom: 2.5rem; } }
-  @media only screen and (max-width: 46em) {
+      margin-bottom: 2.5rem;
+      padding: 2rem; } }
+  @media only screen and (max-width: 45em) {
     .img-container {
-      width: 75%;
+      width: 80%;
       padding: 0rem; } }
   @media only screen and (max-width: 37.5em) {
     .img-container {
@@ -957,13 +968,14 @@ body {
     display: inline-block;
     font-size: 1.6rem;
     list-style: none;
-    margin: 12rem 0 0 2.5rem;
-    width: 45%;
     padding-top: 3rem;
+    margin: 8rem 0 0 2.5rem;
     border-top: 1px solid #EBDDDD; }
+  .footer__item:not(:first-child) {
+    margin: 2.5rem 2.5rem 2.5rem; }
   .footer__item {
     display: block;
-    margin: 2.5rem;
+    margin: 0rem 2.5rem 2.5rem;
     line-height: 4rem; }
   .footer__link:link, .footer__link:visited {
     display: inline-block;
@@ -977,7 +989,7 @@ body {
   .footer__statement-box {
     width: 40%;
     float: right;
-    margin: 12rem 4.5rem 0 0; }
+    margin: 8rem 4.5rem 0 0; }
   .footer__statement {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -1000,6 +1012,9 @@ body {
   background-position: 100%;
   height: 95vh;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      height: 90vh; } }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -1131,9 +1146,6 @@ body {
 .section-about {
   padding: 15rem 2.5rem 20rem;
   margin-bottom: 10rem; }
-  @media only screen and (hover: none) {
-    .section-about {
-      padding: 5rem 2.5rem 7.5rem; } }
   @media only screen and (max-width: 43.75em) {
     .section-about {
       padding: 5rem 2.5rem;
@@ -1142,14 +1154,20 @@ body {
     .section-about {
       padding: 0 2.5rem;
       margin-top: 6rem;
-      margin-bottom: 36rem; } }
+      margin-bottom: 28rem; } }
+  @media only screen and (max-width: 32em) {
+    .section-about {
+      margin-bottom: 34rem; } }
   @media only screen and (max-width: 30em) {
     .section-about {
-      margin-bottom: 46rem; } }
+      margin-bottom: 42rem; } }
   @media only screen and (max-width: 25em) {
     .section-about {
       margin-bottom: 50rem; } }
-  @media only screen and (max-width: 22.5em) {
+  @media only screen and (max-width: 23.75em) {
+    .section-about {
+      margin-bottom: 56rem; } }
+  @media only screen and (max-width: 21.25em) {
     .section-about {
       margin-bottom: 63rem; } }
   .section-about__container {
@@ -1163,6 +1181,9 @@ body {
   background-color: #AE7470;
   width: auto;
   background-image: linear-gradient(94deg, #cda9a6 0, #cda9a6 33.3333%, transparent 33.3333%, transparent 66.6667%, #804c49 66.6667%); }
+  @media only screen and (max-width: 65em) {
+    .section-features {
+      padding: 6rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-features {
       padding: 10rem 2rem 12rem; } }
