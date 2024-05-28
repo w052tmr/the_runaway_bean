@@ -1154,7 +1154,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .section-about {
       padding: 0 2.5rem;
-      margin-top: 6rem;
+      margin-top: 4rem;
       margin-bottom: 28rem; } }
   @media only screen and (max-width: 32em) {
     .section-about {
@@ -1170,7 +1170,7 @@ body {
       margin-bottom: 56rem; } }
   @media only screen and (max-width: 21.25em) {
     .section-about {
-      margin-bottom: 70rem; } }
+      margin-bottom: 66rem; } }
   .section-about__container {
     display: flex;
     justify-content: center;
