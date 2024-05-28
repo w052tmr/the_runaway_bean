@@ -728,7 +728,7 @@ body {
     @media only screen and (max-width: 45em) {
       .envelope__letter {
         background-image: linear-gradient(90deg, #FFFDD1, #FFFDD1); } }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 37.5em), (hover: none) {
       .envelope__letter {
         visibility: visible;
         opacity: 1; } }
@@ -1147,30 +1147,33 @@ body {
 .section-about {
   padding: 5rem 2.5rem 20rem;
   margin-bottom: 16rem; }
+  @media only screen and (max-width: 45em) {
+    .section-about {
+      margin-bottom: 6rem; } }
   @media only screen and (max-width: 43.75em) {
     .section-about {
       margin-bottom: 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section-about {
       margin-bottom: 10rem; } }
-  @media only screen and (max-width: 35.5em) {
+  @media only screen and (max-width: 34.5em) {
     .section-about {
       margin-bottom: 18rem; } }
-  @media only screen and (max-width: 29.875em) {
+  @media only screen and (max-width: 29.8125em) {
     .section-about {
       margin-bottom: 24rem; } }
   @media only screen and (max-width: 26em) {
     .section-about {
+      margin-bottom: 30rem; } }
+  @media only screen and (max-width: 25em) {
+    .section-about {
       margin-bottom: 36rem; } }
-  @media only screen and (max-width: 23.75em) {
+  @media only screen and (max-width: 22.6875em) {
     .section-about {
-      margin-bottom: 44rem; } }
-  @media only screen and (max-width: 23.6875em) {
+      margin-bottom: 46rem; } }
+  @media only screen and (max-width: 20.75em) {
     .section-about {
-      margin-bottom: 48rem; } }
-  @media only screen and (max-width: 21.8125em) {
-    .section-about {
-      margin-bottom: 56rem; } }
+      margin-bottom: 54rem; } }
   .section-about__container {
     display: flex;
     justify-content: center;
