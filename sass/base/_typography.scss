@@ -51,6 +51,7 @@ body {
     &--sub {
         display: block;
         font-size: 1.8rem;
+        margin-top: 2rem;
         color: $yellow-dark;
         font-weight: 900;
         letter-spacing: 1.5rem;
@@ -65,8 +66,8 @@ body {
             margin-top: 2.5rem;
         }
 
-        @media (max-width: 44.375em) {
-            letter-spacing: 0.75rem;
+        @media only screen and (max-width: 44.375em) {
+            letter-spacing: 0.6rem;
         }
 
         @include respond(phone) {
@@ -74,7 +75,7 @@ body {
             letter-spacing: 4px;
         }
 
-        @media (max-width: 28.125em) {
+        @media only screen and (max-width: 28.125em) {
             letter-spacing: 2px;
             font-size: 1.9rem;
         }
