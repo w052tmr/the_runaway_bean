@@ -58,11 +58,11 @@ body {
         transform: skewX(-12deg);
 
         @include respond(tab-land) {
-            letter-spacing: 1.35rem;
+            letter-spacing: 1.25rem;
         }
 
         @include respond(tab-port) {
-            letter-spacing: 1.25rem;
+            letter-spacing: 1rem;
             margin-top: 2.5rem;
         }
 
