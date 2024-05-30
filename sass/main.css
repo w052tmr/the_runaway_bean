@@ -585,24 +585,34 @@ body {
       background-image: linear-gradient(95deg, #4A2C2A, #804C49); }
       .card-container .checkbox + .card--2 > .card__header, .card-container .checkbox + .card--3 > .card__header, .card-container .checkbox + .card--4 > .card__header {
         left: 50%; }
-      @media only screen and (max-width: 65em) {
-        .card-container .checkbox + .card--2, .card-container .checkbox + .card--3, .card-container .checkbox + .card--4 {
-          width: 100%;
-          margin-bottom: 6rem; }
-          .card-container .checkbox + .card--2 > .card__header, .card-container .checkbox + .card--3 > .card__header, .card-container .checkbox + .card--4 > .card__header {
-            left: 5%; }
-          .card-container .checkbox + .card--2--2, .card-container .checkbox + .card--3--2, .card-container .checkbox + .card--4--2 {
-            background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/coffee-shop2-1200w.jpg);
-            cursor: default; }
-          .card-container .checkbox + .card--2--3, .card-container .checkbox + .card--3--3, .card-container .checkbox + .card--4--3 {
-            background-image: linear-gradient(180deg), url(../imgs/coffee-shop-outdoors-1200w.jpg);
-            cursor: default; }
-          .card-container .checkbox + .card--2--4, .card-container .checkbox + .card--3--4, .card-container .checkbox + .card--4--4 {
-            background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/PourOver-1200w.jpg);
-            cursor: default; } }
       @media only screen and (max-width: 30em) {
         .card-container .checkbox + .card--2 > .card__header, .card-container .checkbox + .card--3 > .card__header, .card-container .checkbox + .card--4 > .card__header {
           display: none; } }
+    @media only screen and (max-width: 65em) {
+      .card-container .checkbox + .card {
+        width: 100%;
+        margin-bottom: 6rem; }
+        .card-container .checkbox + .card > .card__header {
+          left: 5%; }
+        .card-container .checkbox + .card--2 {
+          background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/coffee-shop2-1200w.jpg);
+          cursor: default; }
+        .card-container .checkbox + .card--3 {
+          background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/coffee-shop-outdoors-1200w.jpg);
+          cursor: default; }
+        .card-container .checkbox + .card--4 {
+          background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/PourOver-1200w.jpg);
+          cursor: default; } }
+    @media only screen and (max-width: 56.25em) {
+      .card-container .checkbox + .card--2 {
+        background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/coffee-shop2-600w.jpg);
+        cursor: default; }
+      .card-container .checkbox + .card--3 {
+        background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/coffee-shop-outdoors-600w.jpg);
+        cursor: default; }
+      .card-container .checkbox + .card--4 {
+        background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/PourOver-600w.jpg);
+        cursor: default; } }
     .card-container .checkbox + .card > .card__text {
       bottom: 0;
       left: 0;
@@ -626,10 +636,6 @@ body {
   .card-container .checkbox:checked + .card {
     background-color: #4A2C2A;
     background-image: linear-gradient(95deg, #4A2C2A, #804C49); }
-    @media only screen and (max-width: 65em) {
-      .card-container .checkbox:checked + .card {
-        background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/CoffeeShop-1200w.jpg);
-        cursor: default; } }
     .card-container .checkbox:checked + .card--1 {
       width: 10rem; }
       .card-container .checkbox:checked + .card--1 > .card__header {
@@ -640,12 +646,18 @@ body {
       @media only screen and (max-width: 65em) {
         .card-container .checkbox:checked + .card--1 {
           width: 100%;
-          margin-bottom: 6rem; }
+          margin-bottom: 6rem;
+          background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/CoffeeShop-1200w.jpg);
+          cursor: default; }
           .card-container .checkbox:checked + .card--1 > .card__header {
             left: 5%; }
           .card-container .checkbox:checked + .card--1 > .card__text {
             visibility: visible;
             opacity: 1; } }
+      @media only screen and (max-width: 56.25em) {
+        .card-container .checkbox:checked + .card--1 {
+          background-image: linear-gradient(180deg, rgba(205, 169, 166, 0.2), rgba(174, 116, 112, 0.2) 50%, rgba(174, 116, 112, 0.3) 68%, rgba(128, 76, 73, 0.95) 90%), url(../imgs/CoffeeShop-600w.jpg);
+          cursor: default; } }
     .card-container .checkbox:checked + .card--2, .card-container .checkbox:checked + .card--3, .card-container .checkbox:checked + .card--4 {
       width: 60%; }
       .card-container .checkbox:checked + .card--2:hover .card__text, .card-container .checkbox:checked + .card--3:hover .card__text, .card-container .checkbox:checked + .card--4:hover .card__text {
@@ -1023,9 +1035,6 @@ body {
   background-position: 100%;
   height: 95vh;
   position: relative; }
-  @media only screen and (min-width: 125em) {
-    .header {
-      background-image: linear-gradient(100deg, rgba(128, 76, 73, 0.5), rgba(74, 44, 42, 0.6), rgba(20, 12, 11, 0.7)), url(../imgs/hero-large.jpg); } }
   @media only screen and (max-width: 56.25em) {
     .header {
       background-image: linear-gradient(100deg, rgba(128, 76, 73, 0.5), rgba(74, 44, 42, 0.6), rgba(20, 12, 11, 0.7)), url(../imgs/hero-small.jpg); } }
@@ -1033,6 +1042,9 @@ body {
     .header {
       background-image: linear-gradient(100deg, rgba(128, 76, 73, 0.5), rgba(74, 44, 42, 0.6), rgba(20, 12, 11, 0.7)), url(../imgs/hero-mobile.jpg);
       height: 88vh; } }
+  @media only screen and (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(100deg, rgba(128, 76, 73, 0.5), rgba(74, 44, 42, 0.6), rgba(20, 12, 11, 0.7)), url(../imgs/hero-large.jpg); } }
   .header__text-box {
     position: absolute;
     top: 50%;
@@ -1247,12 +1259,12 @@ body {
   background-size: 140%;
   background-position: 20%;
   border-radius: 3px; }
-  @media only screen and (min-width: 87.5em) {
-    .booking-form {
-      background-image: linear-gradient(75deg, #4A2C2A 0, #140C0B 30%, #140C0B 40%, rgba(174, 116, 112, 0.25) 50%, rgba(205, 169, 166, 0.15)), url(../imgs/BeautifulCoffeeDesignPour-2000w.jpg); } }
   @media only screen and (max-width: 37.5em) {
     .booking-form {
       background-image: linear-gradient(75deg, #4A2C2A 0, #140C0B 40%, #140C0B 50%, rgba(174, 116, 112, 0.5) 75%, rgba(205, 169, 166, 0.35)), url(../imgs/BeautifulCoffeeDesignPour-600w.jpg);
       background-size: 280%;
       background-position: 40%;
       margin: 0rem; } }
+  @media only screen and (min-width: 87.5em) {
+    .booking-form {
+      background-image: linear-gradient(75deg, #4A2C2A 0, #140C0B 30%, #140C0B 40%, rgba(174, 116, 112, 0.25) 50%, rgba(205, 169, 166, 0.15)), url(../imgs/BeautifulCoffeeDesignPour-2000w.jpg); } }
